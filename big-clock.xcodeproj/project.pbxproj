@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75CFA2172BD6DD0B0089C560 /* big_clockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2162BD6DD0B0089C560 /* big_clockApp.swift */; };
+		75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */; };
 		75CFA2192BD6DD0B0089C560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2182BD6DD0B0089C560 /* ContentView.swift */; };
 		75CFA21B2BD6DD0C0089C560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */; };
 		75CFA21E2BD6DD0C0089C560 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA21D2BD6DD0C0089C560 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		75CFA2132BD6DD0B0089C560 /* big-clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "big-clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75CFA2162BD6DD0B0089C560 /* big_clockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = big_clockApp.swift; sourceTree = "<group>"; };
+		75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigClockApp.swift; sourceTree = "<group>"; };
 		75CFA2182BD6DD0B0089C560 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75CFA21D2BD6DD0C0089C560 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		75CFA2152BD6DD0B0089C560 /* big-clock */ = {
 			isa = PBXGroup;
 			children = (
-				75CFA2162BD6DD0B0089C560 /* big_clockApp.swift */,
+				75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */,
 				75CFA2182BD6DD0B0089C560 /* ContentView.swift */,
 				75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */,
 				75CFA21C2BD6DD0C0089C560 /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CFA2192BD6DD0B0089C560 /* ContentView.swift in Sources */,
-				75CFA2172BD6DD0B0089C560 /* big_clockApp.swift in Sources */,
+				75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +272,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"big-clock/Preview Content\"";
-				DEVELOPMENT_TEAM = PZ3JGM2DJG;
+				DEVELOPMENT_TEAM = 8KR33X63ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Big Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,14 +304,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"big-clock/Preview Content\"";
-				DEVELOPMENT_TEAM = PZ3JGM2DJG;
+				DEVELOPMENT_TEAM = 8KR33X63ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Big Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

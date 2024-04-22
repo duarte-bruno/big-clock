@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct big_clockApp: App {
+struct BigClockApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
