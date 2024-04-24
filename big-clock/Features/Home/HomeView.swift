@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     // MARK: - Parameters
     
@@ -51,7 +51,7 @@ struct ContentView: View {
 
 // MARK: - Methods
 
-extension ContentView {
+extension HomeView {
     
     func timeString(date: Date) -> String {
         let time = timeFormat.string(from: date)
@@ -60,5 +60,5 @@ extension ContentView {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }

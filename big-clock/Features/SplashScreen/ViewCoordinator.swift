@@ -11,7 +11,7 @@ struct ViewCoordinator: View {
     @State private var isActive = false
         var body: some View {
             if isActive {
-                ContentView()
+                HomeView()
             } else {
                 SplashView(isActive: $isActive)
             }

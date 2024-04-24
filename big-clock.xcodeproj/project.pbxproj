@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */; };
-		75CFA2192BD6DD0B0089C560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2182BD6DD0B0089C560 /* ContentView.swift */; };
+		75CFA2192BD6DD0B0089C560 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2182BD6DD0B0089C560 /* HomeView.swift */; };
 		75CFA21B2BD6DD0C0089C560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */; };
 		75CFA21E2BD6DD0C0089C560 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA21D2BD6DD0C0089C560 /* Preview Assets.xcassets */; };
 		75CFA2252BD6EB310089C560 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2242BD6EB310089C560 /* SplashView.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		75CFA2132BD6DD0B0089C560 /* big-clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "big-clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigClockApp.swift; sourceTree = "<group>"; };
-		75CFA2182BD6DD0B0089C560 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75CFA2182BD6DD0B0089C560 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75CFA21D2BD6DD0C0089C560 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75CFA2242BD6EB310089C560 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -38,6 +38,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		758B32B42BD94261005FB02F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */,
+				75CFA22A2BD6ED4B0089C560 /* Launch Screen.storyboard */,
+				75CFA21C2BD6DD0C0089C560 /* Preview Content */,
+				75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		758B32B52BD944A5005FB02F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				758B32B72BD944BF005FB02F /* SplashScreen */,
+				758B32B62BD944B7005FB02F /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		758B32B62BD944B7005FB02F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				75CFA2182BD6DD0B0089C560 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		758B32B72BD944BF005FB02F /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				75CFA2262BD6EC520089C560 /* ViewCoordinator.swift */,
+				75CFA2242BD6EB310089C560 /* SplashView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		75CFA20A2BD6DD0B0089C560 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +94,8 @@
 		75CFA2152BD6DD0B0089C560 /* big-clock */ = {
 			isa = PBXGroup;
 			children = (
-				75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */,
-				75CFA2182BD6DD0B0089C560 /* ContentView.swift */,
-				75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */,
-				75CFA21C2BD6DD0C0089C560 /* Preview Content */,
-				75CFA2242BD6EB310089C560 /* SplashView.swift */,
-				75CFA2262BD6EC520089C560 /* ViewCoordinator.swift */,
-				75CFA22A2BD6ED4B0089C560 /* Launch Screen.storyboard */,
+				758B32B52BD944A5005FB02F /* Features */,
+				758B32B42BD94261005FB02F /* SupportFiles */,
 			);
 			path = "big-clock";
 			sourceTree = "<group>";
@@ -147,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CFA2192BD6DD0B0089C560 /* ContentView.swift in Sources */,
+				75CFA2192BD6DD0B0089C560 /* HomeView.swift in Sources */,
 				75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */,
 				75CFA2252BD6EB310089C560 /* SplashView.swift in Sources */,
 				75CFA2272BD6EC520089C560 /* ViewCoordinator.swift in Sources */,
@@ -283,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"big-clock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"big-clock/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 8KR33X63ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -316,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"big-clock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"big-clock/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 8KR33X63ZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
