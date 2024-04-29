@@ -4,16 +4,19 @@ struct YearView: View {
     
     // MARK: - Parameters
     
+    var viewModel = YearViewModel()
+    
     // MARK: - View
     
     var body: some View {
         VStack(alignment: .leading, content: {
-            Text("\("")% of the year has passed and you only have \("") days, \("") weeks or \("") months left until the year is over.")
-                .frame(width: .infinity)
+            Text(viewModel.mainYearText)
                 .font(.system(size: 14, weight: .regular))
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(.white)
-            ProgressView(value: 20, total: 100)
+                .padding(.horizontal, 0)
+            ProgressView(value: viewModel.yearPastPercentage, total: 100)
+                .tint(.white)
         })
     }
 }
