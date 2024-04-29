@@ -7,7 +7,7 @@ class YearCounterViewModel {
     // Public
     
     var mainYearText: String {
-       return "\(Int(yearPastPercentage))% of the year has passed and you only have \(totalDaysLeftYearCount) days or \(totalWeeksLeftYearCount) weeks or \(monthsDifferenceTo) months left until the year is over."
+       return "\(Int(yearPastPercentage))% of the year has passed and you only have \(totalDaysLeftCount) days or \(totalWeeksLeftCount) weeks or \(totalMonthsLeftCount) months left until the year is over."
     }
     
     var yearPastPercentage: Float {
@@ -27,15 +27,15 @@ class YearCounterViewModel {
         return (startDateOfYear, lastDateOfYear)
     }()
     
-    private var totalDaysLeftYearCount: Int {
+    private var totalDaysLeftCount: Int {
         return Date().daysDifferenceTo(startAndEndOfYear.end)
     }
     
-    private var totalWeeksLeftYearCount: Int {
+    private var totalWeeksLeftCount: Int {
         return Date().weeksDifferenceTo(startAndEndOfYear.end)
     }
     
-    private var monthsDifferenceTo: Int {
+    private var totalMonthsLeftCount: Int {
         return Date().monthsDifferenceTo(startAndEndOfYear.end)
     }
 }
