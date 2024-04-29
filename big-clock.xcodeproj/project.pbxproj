@@ -64,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7516384C2BDFE1FF0007D4DD /* YearCounterView */ = {
+			isa = PBXGroup;
+			children = (
+				758B32BA2BD94B7D005FB02F /* YearCounterView.swift */,
+				7516384A2BDFC54F0007D4DD /* YearCounterViewModel.swift */,
+			);
+			path = YearCounterView;
+			sourceTree = "<group>";
+		};
 		758B32B42BD94261005FB02F /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +113,7 @@
 		758B32B82BD94B54005FB02F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				758B32BA2BD94B7D005FB02F /* YearCounterView.swift */,
-				7516384A2BDFC54F0007D4DD /* YearCounterViewModel.swift */,
+				7516384C2BDFE1FF0007D4DD /* YearCounterView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
