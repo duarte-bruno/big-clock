@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758B32BB2BD94B7D005FB02F /* YearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32BA2BD94B7D005FB02F /* YearView.swift */; };
+		758B32C12BDA9F29005FB02F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32C02BDA9F29005FB02F /* Date+Extensions.swift */; };
+		758B32D22BDBE3FB005FB02F /* Date+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32D12BDBE3FB005FB02F /* Date+ExtensionsTests.swift */; };
 		75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */; };
 		75CFA2192BD6DD0B0089C560 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFA2182BD6DD0B0089C560 /* HomeView.swift */; };
 		75CFA21B2BD6DD0C0089C560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA21A2BD6DD0C0089C560 /* Assets.xcassets */; };
@@ -16,7 +19,21 @@
 		75CFA22B2BD6ED4B0089C560 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CFA22A2BD6ED4B0089C560 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		758B32CA2BDBE372005FB02F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CFA20B2BD6DD0B0089C560 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CFA2122BD6DD0B0089C560;
+			remoteInfo = "big-clock";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		758B32BA2BD94B7D005FB02F /* YearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearView.swift; sourceTree = "<group>"; };
+		758B32C02BDA9F29005FB02F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		758B32C62BDBE372005FB02F /* big-clock-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "big-clock-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		758B32D12BDBE3FB005FB02F /* Date+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		75CFA2132BD6DD0B0089C560 /* big-clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "big-clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFA2162BD6DD0B0089C560 /* BigClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigClockApp.swift; sourceTree = "<group>"; };
 		75CFA2182BD6DD0B0089C560 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -28,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		758B32C32BDBE372005FB02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CFA2102BD6DD0B0089C560 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,10 +99,59 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
+		758B32B82BD94B54005FB02F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				758B32BA2BD94B7D005FB02F /* YearView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		758B32BC2BD94CC8005FB02F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				758B32BF2BDA9F10005FB02F /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		758B32BF2BDA9F10005FB02F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				758B32C02BDA9F29005FB02F /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		758B32C72BDBE372005FB02F /* big-clock-tests */ = {
+			isa = PBXGroup;
+			children = (
+				758B32CF2BDBE391005FB02F /* Helpers */,
+			);
+			path = "big-clock-tests";
+			sourceTree = "<group>";
+		};
+		758B32CF2BDBE391005FB02F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				758B32D02BDBE398005FB02F /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		758B32D02BDBE398005FB02F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				758B32D12BDBE3FB005FB02F /* Date+ExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		75CFA20A2BD6DD0B0089C560 = {
 			isa = PBXGroup;
 			children = (
 				75CFA2152BD6DD0B0089C560 /* big-clock */,
+				758B32C72BDBE372005FB02F /* big-clock-tests */,
 				75CFA2142BD6DD0B0089C560 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				75CFA2132BD6DD0B0089C560 /* big-clock.app */,
+				758B32C62BDBE372005FB02F /* big-clock-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +168,8 @@
 		75CFA2152BD6DD0B0089C560 /* big-clock */ = {
 			isa = PBXGroup;
 			children = (
+				758B32BC2BD94CC8005FB02F /* Helpers */,
+				758B32B82BD94B54005FB02F /* Components */,
 				758B32B52BD944A5005FB02F /* Features */,
 				758B32B42BD94261005FB02F /* SupportFiles */,
 			);
@@ -111,6 +187,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		758B32C52BDBE372005FB02F /* big-clock-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758B32CC2BDBE372005FB02F /* Build configuration list for PBXNativeTarget "big-clock-tests" */;
+			buildPhases = (
+				758B32C22BDBE372005FB02F /* Sources */,
+				758B32C32BDBE372005FB02F /* Frameworks */,
+				758B32C42BDBE372005FB02F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758B32CB2BDBE372005FB02F /* PBXTargetDependency */,
+			);
+			name = "big-clock-tests";
+			productName = "big-clock-tests";
+			productReference = 758B32C62BDBE372005FB02F /* big-clock-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		75CFA2122BD6DD0B0089C560 /* big-clock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75CFA2212BD6DD0C0089C560 /* Build configuration list for PBXNativeTarget "big-clock" */;
@@ -135,9 +229,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					758B32C52BDBE372005FB02F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 75CFA2122BD6DD0B0089C560;
+					};
 					75CFA2122BD6DD0B0089C560 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -157,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				75CFA2122BD6DD0B0089C560 /* big-clock */,
+				758B32C52BDBE372005FB02F /* big-clock-tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		758B32C42BDBE372005FB02F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CFA2112BD6DD0B0089C560 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,12 +281,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		758B32C22BDBE372005FB02F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758B32D22BDBE3FB005FB02F /* Date+ExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CFA20F2BD6DD0B0089C560 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				75CFA2192BD6DD0B0089C560 /* HomeView.swift in Sources */,
 				75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */,
+				758B32C12BDA9F29005FB02F /* Date+Extensions.swift in Sources */,
+				758B32BB2BD94B7D005FB02F /* YearView.swift in Sources */,
 				75CFA2252BD6EB310089C560 /* SplashView.swift in Sources */,
 				75CFA2272BD6EC520089C560 /* ViewCoordinator.swift in Sources */,
 			);
@@ -188,7 +304,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		758B32CB2BDBE372005FB02F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CFA2122BD6DD0B0089C560 /* big-clock */;
+			targetProxy = 758B32CA2BDBE372005FB02F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		758B32CD2BDBE372005FB02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ3JGM2DJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "duarte-bruno.big-clock-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/big-clock";
+			};
+			name = Debug;
+		};
+		758B32CE2BDBE372005FB02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ3JGM2DJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "duarte-bruno.big-clock-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/big-clock";
+			};
+			name = Release;
+		};
 		75CFA21F2BD6DD0C0089C560 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +539,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		758B32CC2BDBE372005FB02F /* Build configuration list for PBXNativeTarget "big-clock-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758B32CD2BDBE372005FB02F /* Debug */,
+				758B32CE2BDBE372005FB02F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75CFA20E2BD6DD0B0089C560 /* Build configuration list for PBXProject "big-clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

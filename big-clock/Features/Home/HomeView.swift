@@ -33,6 +33,7 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
+                    YearView()
                     Text("\(dateFormat.string(from: date))")
                         .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.07: g.size.height * 0.1, weight: .regular))
                         .lineLimit(1)
