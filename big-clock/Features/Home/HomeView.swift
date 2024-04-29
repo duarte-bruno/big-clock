@@ -28,24 +28,29 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader{ g in
-            ZStack {
+            ZStack(alignment: .top, content: {
                 Color.black
                     .ignoresSafeArea()
                 
                 VStack {
                     YearView()
                         .padding(.horizontal, 20)
-                    Text("\(dateFormat.string(from: date))")
-                        .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.07: g.size.height * 0.1, weight: .regular))
-                        .lineLimit(1)
-                        .foregroundStyle(.white)
-                    Text("\(timeString(date: date))")
-                        .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.23: g.size.height * 0.30, weight: .bold))
-                        .lineLimit(1)
-                        .foregroundStyle(.white)
+                    ZStack(alignment: .center, content: {
+                        VStack {
+                            Text("\(dateFormat.string(from: date))")
+                                .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.07: g.size.height * 0.1, weight: .regular))
+                                .lineLimit(1)
+                                .foregroundStyle(.white)
+                            Text("\(timeString(date: date))")
+                                .font(.system(size: g.size.height > g.size.width ? g.size.width * 0.23: g.size.height * 0.30, weight: .bold))
+                                .lineLimit(1)
+                                .foregroundStyle(.white)
+                        }
+                    })
+                    .frame(maxHeight: .infinity)
                 }
                 .frame(maxWidth: .infinity)
-            }
+            })
             .onAppear(perform: {let _ = self.updateTimer})
         }
     }
