@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct YearView: View {
+struct YearCounterView: View {
     
     // MARK: - Parameters
     
-    var viewModel = YearViewModel()
+    var viewModel = YearCounterViewModel()
     
     // MARK: - View
     
@@ -32,5 +32,5 @@ struct YearView: View {
 }
 
 #Preview {
-    YearView()
+    YearCounterView()
 }

@@ -33,7 +33,7 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    YearView()
+                    YearCounterView()
                         .padding(.horizontal, 20)
                     ZStack(alignment: .center, content: {
                         VStack {

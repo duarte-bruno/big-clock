@@ -1,6 +1,6 @@
 import Foundation
 
-class YearViewModel {
+class YearCounterViewModel {
     
     // MARK: - Parameters
     
