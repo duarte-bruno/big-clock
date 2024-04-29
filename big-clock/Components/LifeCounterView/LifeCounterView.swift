@@ -22,7 +22,7 @@ struct LifeCounterView: View {
                     .foregroundStyle(.white)
                     .padding(.horizontal, 0)
                 ProgressView(value: viewModel.yearPastPercentage, total: 100)
-                    .tint(.white)
+                    .tint(.orange)
             })
             .frame(maxWidth: .infinity)
         })
