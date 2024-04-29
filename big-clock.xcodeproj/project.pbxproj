@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7516384B2BDFC54F0007D4DD /* YearCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516384A2BDFC54F0007D4DD /* YearCounterViewModel.swift */; };
+		7516384F2BDFE5D10007D4DD /* LifeCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516384E2BDFE5D10007D4DD /* LifeCounterViewModel.swift */; };
+		751638512BDFE5DB0007D4DD /* LifeCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751638502BDFE5DB0007D4DD /* LifeCounterView.swift */; };
 		758B32BB2BD94B7D005FB02F /* YearCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32BA2BD94B7D005FB02F /* YearCounterView.swift */; };
 		758B32C12BDA9F29005FB02F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32C02BDA9F29005FB02F /* Date+Extensions.swift */; };
 		758B32D22BDBE3FB005FB02F /* Date+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758B32D12BDBE3FB005FB02F /* Date+ExtensionsTests.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		7516384A2BDFC54F0007D4DD /* YearCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCounterViewModel.swift; sourceTree = "<group>"; };
+		7516384E2BDFE5D10007D4DD /* LifeCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCounterViewModel.swift; sourceTree = "<group>"; };
+		751638502BDFE5DB0007D4DD /* LifeCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCounterView.swift; sourceTree = "<group>"; };
 		758B32BA2BD94B7D005FB02F /* YearCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCounterView.swift; sourceTree = "<group>"; };
 		758B32C02BDA9F29005FB02F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		758B32C62BDBE372005FB02F /* big-clock-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "big-clock-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,15 @@
 				7516384A2BDFC54F0007D4DD /* YearCounterViewModel.swift */,
 			);
 			path = YearCounterView;
+			sourceTree = "<group>";
+		};
+		7516384D2BDFE28B0007D4DD /* LifeCounterView */ = {
+			isa = PBXGroup;
+			children = (
+				7516384E2BDFE5D10007D4DD /* LifeCounterViewModel.swift */,
+				751638502BDFE5DB0007D4DD /* LifeCounterView.swift */,
+			);
+			path = LifeCounterView;
 			sourceTree = "<group>";
 		};
 		758B32B42BD94261005FB02F /* SupportFiles */ = {
@@ -113,6 +126,7 @@
 		758B32B82BD94B54005FB02F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7516384D2BDFE28B0007D4DD /* LifeCounterView */,
 				7516384C2BDFE1FF0007D4DD /* YearCounterView */,
 			);
 			path = Components;
@@ -304,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751638512BDFE5DB0007D4DD /* LifeCounterView.swift in Sources */,
 				75CFA2192BD6DD0B0089C560 /* HomeView.swift in Sources */,
+				7516384F2BDFE5D10007D4DD /* LifeCounterViewModel.swift in Sources */,
 				7516384B2BDFC54F0007D4DD /* YearCounterViewModel.swift in Sources */,
 				75CFA2172BD6DD0B0089C560 /* BigClockApp.swift in Sources */,
 				758B32C12BDA9F29005FB02F /* Date+Extensions.swift in Sources */,

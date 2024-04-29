@@ -1,23 +1,22 @@
 import SwiftUI
 
-struct YearCounterView: View {
-    
+struct LifeCounterView: View {
     // MARK: - Parameters
     
-    var viewModel = YearCounterViewModel()
+    var viewModel = LifeCounterViewModel()
     
     // MARK: - View
     
     var body: some View {
         HStack(alignment: .center, content: {
-            Image(systemName: "calendar")
-                .font(.system(size: 30))
+            Image(systemName: "heart.square")
+                .font(.system(size: 33))
                 .foregroundStyle(.white)
                 .padding(0)
                 .padding(.trailing, 5)
             
             VStack(alignment: .leading, content: {  
-                Text(viewModel.mainYearText)
+                Text(viewModel.mainText)
                     .font(.system(size: 14, weight: .regular))
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(.white)
@@ -32,5 +31,5 @@ struct YearCounterView: View {
 }
 
 #Preview {
-    YearCounterView()
+    LifeCounterView()
 }

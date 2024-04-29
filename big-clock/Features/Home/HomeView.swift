@@ -35,6 +35,10 @@ struct HomeView: View {
                 VStack {
                     YearCounterView()
                         .padding(.horizontal, 20)
+                        .padding(.bottom, 15)
+                    LifeCounterView()
+                        .padding(.horizontal, 20)
+                    
                     ZStack(alignment: .center, content: {
                         VStack {
                             Text("\(dateFormat.string(from: date))")
